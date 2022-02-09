@@ -13,7 +13,7 @@ Input: <br>
 –    A (potentially large) text string t <br>
 –    A pattern string p <br>
 –    An integer w  deﬁning the number of words per text batch <br>
-–    
+
 Output: <br>
 –    The number r  of occurrences of the pattern string in the text string <br>
 
