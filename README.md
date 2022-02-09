@@ -2,7 +2,7 @@
 
 ## Orchestration of an application using the [Apollo runtime system](https://apollowf.github.io/) developed by the [DPS group](https://dps.uibk.ac.at/) of the [University of Innsbruck](https://www.uibk.ac.at/index.html.en)
 
-### To access the required folders and files switch to master branch
+### To access the required folders and files switch to the master branch
 
 ## Task 1
 
