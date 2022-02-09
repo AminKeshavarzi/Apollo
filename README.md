@@ -1,7 +1,6 @@
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
-## Orchestration of an application using the [Apollo runtime system](https://apollowf.github.io/) developed
-by the [DPS group](https://dps.uibk.ac.at/) of the [University of Innsbruck](https://www.uibk.ac.at/index.html.en)
+## Orchestration of an application using the [Apollo runtime system](https://apollowf.github.io/) developed by the [DPS group](https://dps.uibk.ac.at/) of the [University of Innsbruck](https://www.uibk.ac.at/index.html.en)
 
 ### To access the required folders and files switch to master branch
 
