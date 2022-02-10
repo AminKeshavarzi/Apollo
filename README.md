@@ -1,28 +1,26 @@
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
-# EE-Demo
-This repository provides the opportunity to quickly set up the Apollo Runtime system to observe the (visualized) orchestration of simple example workflows.
+## Orchestration of an application using the [Apollo runtime system](https://apollowf.github.io/) developed
+by the [DPS group](https://dps.uibk.ac.at/) of the [University of Innsbruck](https://www.uibk.ac.at/index.html.en)
 
-## Demonstrations
+## Task 1
+###Problem:
+In this project, your goal is the implementation of an application to search through a given text string and count the
+occurrences of a given string pattern in that text. The input and output of the application, thus, look as follows:<br>
+####Input:
+–    A (potentially large) text string t <br>
+–    A pattern string p <br>
+–    An integer w  deﬁning the number of words per text batch <br>
+–    
+####Output:
+–    The number r  of occurrences of the pattern string in the text string <br>
 
-This project contains a series of demonstrations with varying prerequisites. The entry for each demonstration is annotated with a link to a readme containing more detailed setup instructions.
+### Solution:
+- Defining workflow using [Apollo AFCL editor](https://github.com/Apollo-AFCL/AFCLEditor) --> Generated .yaml file is task1.yaml and exist in demoWfs folder
+- Defining Python functions --> See [How to Implementing and Deploy Serverless Function Resources](https://github.com/Apollo-Core/Tutorial/tree/master/Part_2) and [How to Implement and Deploy Function Code as a Docker Image](https://github.com/Apollo-Core/Tutorial/tree/master/Part_3)
+- [Running the implemented application](https://github.com/Apollo-Core/Tutorial/tree/master/Part_3.5)
 
-Demonstration | Prerequisites | Readme Link | Youtube Link
---------------|---------------|-------------| -------------
-Basic Functionality and GUI | - Java (11+) <br> - Gradle | [Basic Functionality](https://github.com/Apollo-Core/EE-Demo/tree/master/documentation/BasicFunctionality) | [Basic Functionality](https://www.youtube.com/watch?v=KFoT99tpJBk)
-
-
-## Prerequisites
-
-## Running the Demo.
-
-1. Clone the repository.
-
-2. Using the terminal, switch to the directory containing the `build.gradle` file and run `gradlew build` to automatically download the dependencies and build the project.
-
-3. Run the command `gradlew run` to start Apollo's configuration GUI.
-
-4. Click the "Load" button and load any of the configurations from the `configs/` folder of the project, e.g., `singleAtomicConfig.xml`.
-
-5. Click the "Run" button.
-
+### Points:
+- To pull Docker image of Count function run `docker pull keshavarzi/count:latest`
+- To pull Docker image of Split function run `docker pull keshavarzi/split:latest`
+- To pull Docker image of Match function run `docker pull keshavarzi/match:latest`

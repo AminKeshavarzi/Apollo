@@ -1,0 +1,65 @@
+---
+name: "task1"
+dataIns:
+- name: "original"
+  type: "string"
+  source: "original"
+- name: "pattern"
+  type: "string"
+  source: "pattern"
+- name: "w"
+  type: "number"
+  source: "w"
+workflowBody:
+- function:
+    name: "Split"
+    type: "Split"
+    dataIns:
+    - name: "originalStr"
+      type: "string"
+      source: "task1/original"
+    - name: "wNum"
+      type: "number"
+      source: "task1/w"
+    dataOuts:
+    - name: "wordArr"
+      type: "collection"
+- parallelFor:
+    name: "forEachMatch"
+    dataIns:
+    - name: "iterator1"
+      type: "collection"
+      source: "Split/wordArr"
+    iterators: ["iterator1"]
+    loopBody:
+    - function:
+        name: "Match"
+        type: "Match"
+        dataIns:
+        - name: "originalChar"
+          type: "collection"
+          source: "forEachMatch/iterator1"
+        - name: "patternChar"
+          type: "string"
+          source: "task1/pattern"
+        dataOuts:
+        - name: "numMatched"
+          type: "number"
+    dataOuts:
+    - name: "numMatchedArr"
+      type: "collection"
+      source: "Match/numMatched"
+- function:
+    name: "Count"
+    type: "Count"
+    dataIns:
+    - name: "numMatchedArr"
+      type: "collection"
+      source: "forEachMatch/numMatchedArr"
+    dataOuts:
+    - name: "numberMatched"
+      type: "number"
+dataOuts:
+- name: "totalMatched"
+  type: "number"
+  source: "Count/numberMatched"

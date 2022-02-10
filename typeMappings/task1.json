@@ -1,0 +1,35 @@
+[
+	{
+		"functionType": "Split",
+		"resources": [
+			{
+				"type": "Local",
+				"properties": {
+					"Image": "keshavarzi/split"
+				}
+			}
+		]
+	},
+	{
+		"functionType": "Count",
+		"resources": [
+			{
+				"type": "Local",
+				"properties": {
+					"Image": "keshavarzi/count"
+				}
+			}
+		]
+	},
+	{
+		"functionType": "Match",
+		"resources": [
+			{
+				"type": "Local",
+				"properties": {
+					"Image": "keshavarzi/match"
+				}
+			}
+		]
+	}
+]
