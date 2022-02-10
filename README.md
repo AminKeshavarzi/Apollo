@@ -29,5 +29,5 @@ Output: <br>
 
 ### To Run:
 - Run the Apollo Demo
-- Load the task1.xml from configs folder (or set the inputs manually: "filePath" to./inputData/task1.json, "filePathAfcl" to./demoWfs/task1.yaml and "filePathMappingFile" to./typeMappings/task1.json)
+- Load the task1.xml from configs folder (or set the inputs manually: "filePath" to ./inputData/task1.json, "filePathAfcl" to ./demoWfs/task1.yaml and "filePathMappingFile" to ./typeMappings/task1.json)
 - Click on the run
