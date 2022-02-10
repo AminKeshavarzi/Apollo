@@ -28,6 +28,6 @@ Output: <br>
 - To pull Docker image of Match function run `docker pull keshavarzi/match:latest`
 
 ### To Run:
-- Run the Apollo 
-- Load the task1.xml from configs folder (set the inputs)
+- Run the Apollo Demo
+- Load the task1.xml from configs folder (or set the inputs manually: "filePath" to./inputData/task1.json, "filePathAfcl" to./demoWfs/task1.yaml and "filePathMappingFile" to./typeMappings/task1.json)
 - Click on the run
