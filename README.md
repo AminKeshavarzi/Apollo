@@ -29,5 +29,5 @@ Output: <br>
 
 ### To Run:
 - Run the Apollo 
-- Load the task1.config
+- Load the task1.xml from configs folder (set the inputs)
 - Click on the run
