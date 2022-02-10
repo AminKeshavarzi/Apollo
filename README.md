@@ -26,3 +26,8 @@ Output: <br>
 - To pull Docker image of Count function run `docker pull keshavarzi/count:latest`
 - To pull Docker image of Split function run `docker pull keshavarzi/split:latest`
 - To pull Docker image of Match function run `docker pull keshavarzi/match:latest`
+
+### To Run:
+- Run the Apollo 
+- Load the task1.config
+- Click on the run
